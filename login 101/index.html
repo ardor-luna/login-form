@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+   
+    <title>login</title>
+</head>
+<body>
+    <div class="form__container">
+        <div class="form__header">
+            <h2 class="form__title">Login</h2>
+        </div>
+        <form id="form" class="form">
+            <div class="form__control">
+                <label for="username">Username</label>
+                <input type="text" placeholder="ossamaxmesloub" id="username" />
+                <i class="fas fa-check-circle icon"></i>
+                <i class="fas fa-exclamation-circle icon"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form__control show-eye">
+                <label for="username">Password</label>
+                <input type="password" placeholder="Password" id="password" class="password-holder"/>
+                <i  id="show" class="fa fa-eye-slash icon-eye"></i>
+                <i class="fas fa-check-circle icon"></i>
+                <i class="fas fa-exclamation-circle icon"></i>
+                <small>Error message</small>
+            </div>
+            <div class="user__choice">
+                <p>Choose your role :</p>
+                <select name="role" id="role" class="select-choices">
+                    <option value="admin">Admin</option>
+                    <option value="teacher">Teacher</option>
+                </select>
+            </div>
+            <button>Submit</button>
+            <div class="password__reminder">
+                <p>Forgot your password?</p>
+                <a href="#">Click here</a></p>
+            </div>
+        </form>
+    </div> 
+    <script src="main.js"></script>  
+</body>
+</html>
